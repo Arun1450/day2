@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu > li {
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .menu > li > a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            display: block;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+        .menu li ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 20px;
+            display: none;
+        }
+        .menu li:hover > ul {
+            display: block;
+        }
+        .menu li ul li a {
+            background-color: #f1f3f5;
+            padding: 8px;
+            border-radius: 4px;
+            display: block;
+            margin-top: 2px;
+            text-decoration: none;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Product Catalog</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Electronics</a>
+                <ul>
+                    <li><a href="#">Mobile Phones</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Cameras</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Furniture</a>
+                <ul>
+                    <li><a href="#">Sofas</a></li>
+                    <li><a href="#">Beds</a></li>
+                    <li><a href="#">Dining Tables</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Clothing</a>
+                <ul>
+                    <li><a href="#">Men's Wear</a></li>
+                    <li><a href="#">Women's Wear</a></li>
+                    <li><a href="#">Kids' Wear</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
